@@ -3,6 +3,7 @@ import pyttsx3
 
 engine = pyttsx3.init()
 user = input('User : ')
+
 if user=='Hi chatbot':
     print('Hi')
     engine.say ( 'Hi' )
@@ -35,12 +36,17 @@ if user=='Hi chatbot':
         engine.say('How may I help you')
         engine.runAndWait()
         work1 = input('User : ')
-        if work1=='Open google':
+        #Brower works.....
+        if work1=='google':
             webbrowser.open_new_tab('www.google.com')
-        elif work1=='Open youtube':
+        elif work1=='youtube':
             webbrowser.open_new_tab('www.youtube.com')
-        elif work1=='Open amazon':
+        elif work1=='amazon':
             webbrowser.open_new_tab('www.amazon.in')
+        elif work1=='instagram':
+            webbrowser.open_new_tab('www.instagram.com')
+        elif work1=='github':
+            webbrowser.open_new_tab('www.github.com'
         else:
             print('Invalid input !!!!!!!!')
             engine.say ( 'Invalid input !!!!!!!!' )
